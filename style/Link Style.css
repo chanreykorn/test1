@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #212024;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container .form{
+    width: 50%;
+    height: 50vh;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.container .tital{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 100px;
+}
+
+.btn {
+    text-align: center;
+    
+}
+
+button {
+    padding: 15px 30px;
+    margin-top: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #212024;
+    cursor: pointer;
+}

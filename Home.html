@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/Link Style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <p class="tital">0</p>
+            <div class="btn">
+                <button id="btnDalete">Delate</button>
+                <button id="btnCenter">Center</button>
+                <button id="btnAdd">Add</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let btnDalete = document.getElementById("btnDalete");
+    let btnCenter = document.getElementById("btnCenter");
+    let btnAdd = document.getElementById("btnAdd");
+    let total =0
+
+    btnDalete.addEventListener("click", () =>{
+        total -=1;
+        document.querySelector(".tital").innerHTML = total;
+        console.log(total);
+    });
+    btnCenter.addEventListener("click", () =>{
+        total = 0;
+        document.querySelector(".tital").innerHTML = total;
+        console.log(total);
+    });
+    btnAdd.addEventListener("click", () =>{
+        total +=1;
+        document.querySelector(".tital").innerHTML = total;
+        console.log(total);
+    });
+</script>
+</html>
